@@ -19,6 +19,7 @@ stale. I want live drafts on camera.
 5. Re-run the LEAF suite — 10/10.
 
 Also: Scene.scene still contains the 6 RSG tokens. Do NOT commit anything yet.
+
 ## Correction 1 — the flick misfire was preview-camera drift, not frame rate
 
 Prompted by step 5 (re-run LEAF) coming back 6/10 after the restart —
