@@ -18,7 +18,7 @@ down a notification list.
 ## Demo
 
 <!-- video link goes here -->
-_Demo video: to be added._
+_Demo video: https://drive.google.com/drive/folders/1mtCnvNNmg_eE1Q_LI669Mg2o42gdcJKL?usp=sharing_
 
 ## How to run
 
