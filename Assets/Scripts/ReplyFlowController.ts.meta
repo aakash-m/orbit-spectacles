@@ -1,0 +1,61 @@
+- !<AssetImportMetadata/dcc15670-8634-46b7-8220-dd0146e63f28>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> b9bf3543-44cf-4777-aa90-d53f31867600
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> b9bf3543-44cf-4777-aa90-d53f31867600
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 1f5d6a01-8abf-4f4c-b09e-c244870f00df
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/1f5d6a01-8abf-4f4c-b09e-c244870f00df>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: d6d5b915-cb28-41af-a0da-30ef983ca36e
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    debugAutoOpen: false
+    debugReplyKey: false
+    outboxMenu: false
+    panel: false
+    replyService: false
+    ring: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - ring: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      panel: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      replyService: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      outboxMenu: !<MappingBased.AssignableType_4> 00000000-0000-0000-0000-000000000000
+      debugReplyKey: false
+      debugAutoOpen: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input AssignableType_1 ring {"hint":"The ring — pushed back + dimmed while a reply panel is open."}'
+    - '// @input AssignableType_2 panel {"hint":"The reply panel view."}'
+    - '// @input AssignableType_3 replyService {"hint":"The Gemini reply-draft service."}'
+    - '// @input AssignableType_4 outboxMenu {"hint":"Optional: the palm-up outbox menu, refreshed when a draft is sent."}'
+    - '// @input bool debugReplyKey {"hint":"PREVIEW ONLY — press R to open the reply flow on the most urgent card without flicking. Leave OFF for release."}'
+    - '// @input bool debugAutoOpen {"hint":"PREVIEW ONLY — with debugReplyKey on, also auto-open the reply flow 3s after start (for capture/verification). Leave OFF."}'

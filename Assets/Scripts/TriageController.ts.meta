@@ -1,0 +1,58 @@
+- !<AssetImportMetadata/4467b56a-8ef9-40af-8bfd-02a56b755546>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 869d7ff3-40d4-495e-a23c-a89143353847
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 869d7ff3-40d4-495e-a23c-a89143353847
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 03bd0101-6122-4f76-8e2b-3bca7e22ca12
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/03bd0101-6122-4f76-8e2b-3bca7e22ca12>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 10445a68-063b-437b-8a02-a21ed253f6a1
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    debugForceEmptyKey: false
+    dissolveVfx: false
+    replyFlow: false
+    ring: false
+    undoChip: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - ring: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      undoChip: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      dissolveVfx: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      replyFlow: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      debugForceEmptyKey: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input AssignableType_1 ring
+    - // @input AssignableType_2 undoChip
+    - '// @input SceneObject dissolveVfx {"hint":"Optional: the pooled archive-dissolve VFX SceneObject. Moved to the card and re-triggered on archive."}'
+    - '// @input AssignableType_3 replyFlow {"hint":"The phase-3 voice-reply flow. A DOWN flick opens it. If unwired, DOWN just springs the card back (phase-2 behaviour)."}'
+    - '// @input bool debugForceEmptyKey {"hint":"PREVIEW ONLY — press E to force-triage every remaining card straight to the empty state. Leave OFF for release."}'

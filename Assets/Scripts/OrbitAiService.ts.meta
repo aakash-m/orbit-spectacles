@@ -1,0 +1,46 @@
+- !<AssetImportMetadata/c4a2e228-475a-46c2-9cef-e09f38079864>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> f4ff8e66-6aba-450f-b11f-c1b6e723fefa
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> f4ff8e66-6aba-450f-b11f-c1b6e723fefa
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> f643c794-e015-4a55-93e9-62d05ed57937
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/f643c794-e015-4a55-93e9-62d05ed57937>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 537acaf8-2cfb-4b10-9454-9770dddf23a3
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    ring: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - ring: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input AssignableType_1 ring {"hint":"The ring — re-sorted (animated) each time a batch of AI urgencies arrives."}'

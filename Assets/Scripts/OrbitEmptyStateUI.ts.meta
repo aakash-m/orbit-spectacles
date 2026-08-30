@@ -1,0 +1,49 @@
+- !<AssetImportMetadata/e46dbaa6-9491-42f1-9bef-302416ba2475>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 8611fd61-6ca7-4650-8e9e-02bf095f0926
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 8611fd61-6ca7-4650-8e9e-02bf095f0926
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 669804b6-d76c-4290-bce4-3566aff0a6eb
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/669804b6-d76c-4290-bce4-3566aff0a6eb>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: abbad722-5495-47cc-bedf-8420199c6f8f
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    color: false
+    message: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - message: "You're all caught up"
+      color: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 0.820000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - "// @input string message = \"You're all caught up\" {\"hint\":\"The single line shown under the mark.\"}"
+    - '// @input vec4 color = {1,1,1,0.82} {"hint":"Mark + text colour.", "widget":"color"}'

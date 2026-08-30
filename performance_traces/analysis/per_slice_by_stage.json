@@ -1,0 +1,824 @@
+{
+ "00_baseline": {
+  "path": "sweep_00_baseline_preview0.pftrace",
+  "win_s": 7.28,
+  "frames": 149,
+  "wall_fps": 20.6,
+  "ProcessFrame_mean_ms": 28.12,
+  "p50": 27.782,
+  "p90": 32.722,
+  "p99": 36.39,
+  "max": 38.795,
+  "slices": {
+   "Camera": {
+    "ms_per_frame": 0.08174362416107382,
+    "n_per_frame": 1.0067114093959733,
+    "ms_total": 12.1798,
+    "max_ms": 0.1737
+   },
+   "CoreManagerRender": {
+    "ms_per_frame": 2.613756375838926,
+    "n_per_frame": 1.0067114093959733,
+    "ms_total": 389.4497,
+    "max_ms": 4.2836
+   },
+   "FaceDetectPreprocess": {
+    "ms_per_frame": 1.5720604026845637,
+    "n_per_frame": 0.5100671140939598,
+    "ms_total": 234.237,
+    "max_ms": 5.2385
+   },
+   "FaceTrack": {
+    "ms_per_frame": 0.014032214765100673,
+    "n_per_frame": 1.0,
+    "ms_total": 2.0908,
+    "max_ms": 0.0678
+   },
+   "PfttThrottle": {
+    "ms_per_frame": 0.08140469798657718,
+    "n_per_frame": 1.0067114093959733,
+    "ms_total": 12.1293,
+    "max_ms": 0.3392
+   },
+   "ProcessFrame": {
+    "ms_per_frame": 28.11963489932886,
+    "n_per_frame": 1.0,
+    "ms_total": 4189.8256,
+    "max_ms": 38.7953
+   },
+   "RenderFrame": {
+    "ms_per_frame": 0.10537181208053692,
+    "n_per_frame": 1.0067114093959733,
+    "ms_total": 15.7004,
+    "max_ms": 0.2206
+   },
+   "RenderPass": {
+    "ms_per_frame": 0.057763087248322145,
+    "n_per_frame": 1.0067114093959733,
+    "ms_total": 8.6067,
+    "max_ms": 0.1325
+   },
+   "Scene::AnimationSystem": {
+    "ms_per_frame": 0.0015261744966442953,
+    "n_per_frame": 1.0067114093959733,
+    "ms_total": 0.2274,
+    "max_ms": 0.0181
+   },
+   "Scene::CurveSystem": {
+    "ms_per_frame": 0.0010140939597315438,
+    "n_per_frame": 1.0067114093959733,
+    "ms_total": 0.1511,
+    "max_ms": 0.0071
+   },
+   "Scene::LateUpdate": {
+    "ms_per_frame": 0.45855570469798657,
+    "n_per_frame": 1.0067114093959733,
+    "ms_total": 68.3248,
+    "max_ms": 1.0431
+   },
+   "Scene::PhysicsUpdate": {
+    "ms_per_frame": 0.009466442953020135,
+    "n_per_frame": 1.0067114093959733,
+    "ms_total": 1.4105,
+    "max_ms": 0.0345
+   },
+   "Scene::ScriptCallbacks": {
+    "ms_per_frame": 0.00234496644295302,
+    "n_per_frame": 1.0067114093959733,
+    "ms_total": 0.3494,
+    "max_ms": 0.0302
+   },
+   "Scene::Start": {
+    "ms_per_frame": 0.021066442953020133,
+    "n_per_frame": 1.0067114093959733,
+    "ms_total": 3.1389,
+    "max_ms": 0.0686
+   },
+   "Scene::TrackingSystem": {
+    "ms_per_frame": 0.001802013422818792,
+    "n_per_frame": 1.0067114093959733,
+    "ms_total": 0.2685,
+    "max_ms": 0.0226
+   },
+   "Scene::Update": {
+    "ms_per_frame": 0.8995174496644295,
+    "n_per_frame": 1.0067114093959733,
+    "ms_total": 134.0281,
+    "max_ms": 1.6242
+   },
+   "ScnFrame": {
+    "ms_per_frame": 2.468203355704698,
+    "n_per_frame": 1.0067114093959733,
+    "ms_total": 367.7623,
+    "max_ms": 4.0873
+   },
+   "Track": {
+    "ms_per_frame": 20.071704026845637,
+    "n_per_frame": 1.0,
+    "ms_total": 2990.6839,
+    "max_ms": 32.2451
+   }
+  },
+  "desc": "Preview baseline: SIK + camera + lighting, project OFF"
+ },
+ "01_ring": {
+  "path": "sweep_01_ring_preview0.pftrace",
+  "win_s": 7.23,
+  "frames": 135,
+  "wall_fps": 18.7,
+  "ProcessFrame_mean_ms": 28.698,
+  "p50": 28.615,
+  "p90": 32.776,
+  "p99": 41.376,
+  "max": 45.601,
+  "slices": {
+   "Camera": {
+    "ms_per_frame": 0.9037155555555555,
+    "n_per_frame": 1.0,
+    "ms_total": 122.0016,
+    "max_ms": 1.6757
+   },
+   "CoreManagerRender": {
+    "ms_per_frame": 5.673862222222223,
+    "n_per_frame": 1.0,
+    "ms_total": 765.9714,
+    "max_ms": 9.0665
+   },
+   "DrawCall": {
+    "ms_per_frame": 0.1975548148148148,
+    "n_per_frame": 13.0,
+    "ms_total": 26.6699,
+    "max_ms": 0.1105
+   },
+   "FaceDetectPreprocess": {
+    "ms_per_frame": 1.2986266666666668,
+    "n_per_frame": 0.5333333333333333,
+    "ms_total": 175.3146,
+    "max_ms": 4.2105
+   },
+   "FaceTrack": {
+    "ms_per_frame": 0.013594074074074074,
+    "n_per_frame": 1.0,
+    "ms_total": 1.8352,
+    "max_ms": 0.0328
+   },
+   "GetShader": {
+    "ms_per_frame": 0.014548888888888889,
+    "n_per_frame": 13.0,
+    "ms_total": 1.9641,
+    "max_ms": 0.0331
+   },
+   "PfttThrottle": {
+    "ms_per_frame": 0.08793111111111111,
+    "n_per_frame": 1.0,
+    "ms_total": 11.8707,
+    "max_ms": 0.2535
+   },
+   "ProcessFrame": {
+    "ms_per_frame": 28.69842222222222,
+    "n_per_frame": 1.0,
+    "ms_total": 3874.287,
+    "max_ms": 45.601
+   },
+   "RenderFrame": {
+    "ms_per_frame": 1.1578051851851852,
+    "n_per_frame": 1.0,
+    "ms_total": 156.3037,
+    "max_ms": 2.0773
+   },
+   "RenderPass": {
+    "ms_per_frame": 0.8570733333333332,
+    "n_per_frame": 1.0,
+    "ms_total": 115.7049,
+    "max_ms": 1.6102
+   },
+   "Scene::AnimationSystem": {
+    "ms_per_frame": 0.0013844444444444444,
+    "n_per_frame": 1.0,
+    "ms_total": 0.1869,
+    "max_ms": 0.006
+   },
+   "Scene::CurveSystem": {
+    "ms_per_frame": 0.0012103703703703703,
+    "n_per_frame": 1.0,
+    "ms_total": 0.1634,
+    "max_ms": 0.0061
+   },
+   "Scene::LateUpdate": {
+    "ms_per_frame": 0.6207488888888889,
+    "n_per_frame": 1.0,
+    "ms_total": 83.8011,
+    "max_ms": 1.6154
+   },
+   "Scene::PhysicsUpdate": {
+    "ms_per_frame": 0.20885333333333334,
+    "n_per_frame": 1.0,
+    "ms_total": 28.1952,
+    "max_ms": 0.3531
+   },
+   "Scene::ScriptCallbacks": {
+    "ms_per_frame": 0.002719259259259259,
+    "n_per_frame": 1.0,
+    "ms_total": 0.3671,
+    "max_ms": 0.0309
+   },
+   "Scene::Start": {
+    "ms_per_frame": 0.02297851851851852,
+    "n_per_frame": 1.0,
+    "ms_total": 3.1021,
+    "max_ms": 0.0709
+   },
+   "Scene::TrackingSystem": {
+    "ms_per_frame": 0.0018985185185185184,
+    "n_per_frame": 1.0,
+    "ms_total": 0.2563,
+    "max_ms": 0.0222
+   },
+   "Scene::Update": {
+    "ms_per_frame": 1.6124496296296296,
+    "n_per_frame": 1.0,
+    "ms_total": 217.6807,
+    "max_ms": 3.0965
+   },
+   "ScnFrame": {
+    "ms_per_frame": 5.520448888888889,
+    "n_per_frame": 1.0,
+    "ms_total": 745.2606,
+    "max_ms": 8.8412
+   },
+   "Track": {
+    "ms_per_frame": 20.16376,
+    "n_per_frame": 1.0,
+    "ms_total": 2722.1076,
+    "max_ms": 38.7234
+   },
+   "Visual": {
+    "ms_per_frame": 0.6548437037037037,
+    "n_per_frame": 13.0,
+    "ms_total": 88.4039,
+    "max_ms": 0.2884
+   }
+  },
+  "desc": "+ 12-card ring (render + billboard + card-lag scripts)"
+ },
+ "02_triage": {
+  "path": "sweep_02_triage_preview0.pftrace",
+  "win_s": 7.24,
+  "frames": 136,
+  "wall_fps": 18.9,
+  "ProcessFrame_mean_ms": 28.73,
+  "p50": 28.515,
+  "p90": 33.891,
+  "p99": 38.926,
+  "max": 40.646,
+  "slices": {
+   "Camera": {
+    "ms_per_frame": 0.9341286764705883,
+    "n_per_frame": 1.0,
+    "ms_total": 127.0415,
+    "max_ms": 1.5707
+   },
+   "CoreManagerRender": {
+    "ms_per_frame": 5.62553088235294,
+    "n_per_frame": 1.0073529411764706,
+    "ms_total": 765.0722,
+    "max_ms": 8.0351
+   },
+   "DrawCall": {
+    "ms_per_frame": 0.19013308823529412,
+    "n_per_frame": 13.0,
+    "ms_total": 25.8581,
+    "max_ms": 0.1515
+   },
+   "FaceDetectPreprocess": {
+    "ms_per_frame": 1.4510757352941177,
+    "n_per_frame": 0.5220588235294118,
+    "ms_total": 197.3463,
+    "max_ms": 5.726
+   },
+   "FaceTrack": {
+    "ms_per_frame": 0.014244117647058824,
+    "n_per_frame": 1.0073529411764706,
+    "ms_total": 1.9372,
+    "max_ms": 0.0584
+   },
+   "GetShader": {
+    "ms_per_frame": 0.01480514705882353,
+    "n_per_frame": 13.0,
+    "ms_total": 2.0135,
+    "max_ms": 0.1639
+   },
+   "PfttThrottle": {
+    "ms_per_frame": 0.08241323529411765,
+    "n_per_frame": 1.0,
+    "ms_total": 11.2082,
+    "max_ms": 0.1824
+   },
+   "ProcessFrame": {
+    "ms_per_frame": 28.729973529411765,
+    "n_per_frame": 1.0,
+    "ms_total": 3907.2764,
+    "max_ms": 40.6461
+   },
+   "RenderFrame": {
+    "ms_per_frame": 1.1997176470588236,
+    "n_per_frame": 1.0,
+    "ms_total": 163.1616,
+    "max_ms": 1.9376
+   },
+   "RenderPass": {
+    "ms_per_frame": 0.8892786764705882,
+    "n_per_frame": 1.0,
+    "ms_total": 120.9419,
+    "max_ms": 1.5218
+   },
+   "Scene::AnimationSystem": {
+    "ms_per_frame": 0.0015125,
+    "n_per_frame": 1.0073529411764706,
+    "ms_total": 0.2057,
+    "max_ms": 0.0063
+   },
+   "Scene::CurveSystem": {
+    "ms_per_frame": 0.001148529411764706,
+    "n_per_frame": 1.0073529411764706,
+    "ms_total": 0.1562,
+    "max_ms": 0.008
+   },
+   "Scene::LateUpdate": {
+    "ms_per_frame": 0.6022124999999999,
+    "n_per_frame": 1.0073529411764706,
+    "ms_total": 81.9009,
+    "max_ms": 1.4709
+   },
+   "Scene::PhysicsUpdate": {
+    "ms_per_frame": 0.19841764705882353,
+    "n_per_frame": 1.0073529411764706,
+    "ms_total": 26.9848,
+    "max_ms": 0.3225
+   },
+   "Scene::ScriptCallbacks": {
+    "ms_per_frame": 0.002686029411764706,
+    "n_per_frame": 1.0073529411764706,
+    "ms_total": 0.3653,
+    "max_ms": 0.0381
+   },
+   "Scene::Start": {
+    "ms_per_frame": 0.02216764705882353,
+    "n_per_frame": 1.0073529411764706,
+    "ms_total": 3.0148,
+    "max_ms": 0.0517
+   },
+   "Scene::TrackingSystem": {
+    "ms_per_frame": 0.0016816176470588235,
+    "n_per_frame": 1.0073529411764706,
+    "ms_total": 0.2287,
+    "max_ms": 0.0135
+   },
+   "Scene::Update": {
+    "ms_per_frame": 1.5776625,
+    "n_per_frame": 1.0073529411764706,
+    "ms_total": 214.5621,
+    "max_ms": 3.1423
+   },
+   "ScnFrame": {
+    "ms_per_frame": 5.474969117647059,
+    "n_per_frame": 1.0073529411764706,
+    "ms_total": 744.5958,
+    "max_ms": 7.873
+   },
+   "Track": {
+    "ms_per_frame": 20.354572794117647,
+    "n_per_frame": 1.0073529411764706,
+    "ms_total": 2768.2219,
+    "max_ms": 32.7917
+   },
+   "Visual": {
+    "ms_per_frame": 0.690385294117647,
+    "n_per_frame": 13.0,
+    "ms_total": 93.8924,
+    "max_ms": 0.5489
+   }
+  },
+  "desc": "+ TriageHub + UndoChip + EmptyState + '+N' counter"
+ },
+ "03_vfx": {
+  "path": "sweep_03_vfx_preview0.pftrace",
+  "win_s": 7.26,
+  "frames": 140,
+  "wall_fps": 19.2,
+  "ProcessFrame_mean_ms": 28.055,
+  "p50": 27.674,
+  "p90": 32.636,
+  "p99": 35.995,
+  "max": 43.014,
+  "slices": {
+   "Camera": {
+    "ms_per_frame": 0.8967442857142858,
+    "n_per_frame": 0.9928571428571429,
+    "ms_total": 125.5442,
+    "max_ms": 1.5492
+   },
+   "CoreManagerRender": {
+    "ms_per_frame": 5.368632142857143,
+    "n_per_frame": 0.9928571428571429,
+    "ms_total": 751.6085,
+    "max_ms": 7.6989
+   },
+   "DrawCall": {
+    "ms_per_frame": 0.18393285714285712,
+    "n_per_frame": 12.907142857142857,
+    "ms_total": 25.7506,
+    "max_ms": 0.1421
+   },
+   "FaceDetectPreprocess": {
+    "ms_per_frame": 1.4154028571428572,
+    "n_per_frame": 0.5285714285714286,
+    "ms_total": 198.1564,
+    "max_ms": 4.7376
+   },
+   "FaceTrack": {
+    "ms_per_frame": 0.013817142857142856,
+    "n_per_frame": 1.0,
+    "ms_total": 1.9344,
+    "max_ms": 0.0476
+   },
+   "GetShader": {
+    "ms_per_frame": 0.014362857142857144,
+    "n_per_frame": 12.907142857142857,
+    "ms_total": 2.0108,
+    "max_ms": 0.0411
+   },
+   "PfttThrottle": {
+    "ms_per_frame": 0.08506928571428572,
+    "n_per_frame": 0.9928571428571429,
+    "ms_total": 11.9097,
+    "max_ms": 0.1794
+   },
+   "ProcessFrame": {
+    "ms_per_frame": 28.055398571428572,
+    "n_per_frame": 1.0,
+    "ms_total": 3927.7558,
+    "max_ms": 43.0144
+   },
+   "RenderFrame": {
+    "ms_per_frame": 1.1353328571428571,
+    "n_per_frame": 0.9928571428571429,
+    "ms_total": 158.9466,
+    "max_ms": 1.7895
+   },
+   "RenderPass": {
+    "ms_per_frame": 0.8529757142857143,
+    "n_per_frame": 0.9928571428571429,
+    "ms_total": 119.4166,
+    "max_ms": 1.5076
+   },
+   "Scene::AnimationSystem": {
+    "ms_per_frame": 0.0014607142857142857,
+    "n_per_frame": 0.9928571428571429,
+    "ms_total": 0.2045,
+    "max_ms": 0.0113
+   },
+   "Scene::CurveSystem": {
+    "ms_per_frame": 0.0011614285714285713,
+    "n_per_frame": 0.9928571428571429,
+    "ms_total": 0.1626,
+    "max_ms": 0.008
+   },
+   "Scene::LateUpdate": {
+    "ms_per_frame": 0.5747185714285714,
+    "n_per_frame": 0.9928571428571429,
+    "ms_total": 80.4606,
+    "max_ms": 1.5307
+   },
+   "Scene::PhysicsUpdate": {
+    "ms_per_frame": 0.1971692857142857,
+    "n_per_frame": 0.9928571428571429,
+    "ms_total": 27.6037,
+    "max_ms": 0.3482
+   },
+   "Scene::ScriptCallbacks": {
+    "ms_per_frame": 0.0028292857142857143,
+    "n_per_frame": 0.9928571428571429,
+    "ms_total": 0.3961,
+    "max_ms": 0.0302
+   },
+   "Scene::Start": {
+    "ms_per_frame": 0.021670714285714286,
+    "n_per_frame": 0.9928571428571429,
+    "ms_total": 3.0339,
+    "max_ms": 0.132
+   },
+   "Scene::TrackingSystem": {
+    "ms_per_frame": 0.0017021428571428571,
+    "n_per_frame": 0.9928571428571429,
+    "ms_total": 0.2383,
+    "max_ms": 0.0186
+   },
+   "Scene::Update": {
+    "ms_per_frame": 1.4848864285714285,
+    "n_per_frame": 0.9928571428571429,
+    "ms_total": 207.8841,
+    "max_ms": 3.2797
+   },
+   "ScnFrame": {
+    "ms_per_frame": 5.215751428571428,
+    "n_per_frame": 0.9928571428571429,
+    "ms_total": 730.2052,
+    "max_ms": 7.5303
+   },
+   "Track": {
+    "ms_per_frame": 19.76696642857143,
+    "n_per_frame": 1.0,
+    "ms_total": 2767.3753,
+    "max_ms": 33.5518
+   },
+   "Visual": {
+    "ms_per_frame": 0.6578035714285715,
+    "n_per_frame": 12.907142857142857,
+    "ms_total": 92.0925,
+    "max_ms": 0.4479
+   }
+  },
+  "desc": "+ DissolveVFX particle component (idle)"
+ },
+ "04_reply": {
+  "path": "sweep_04_reply_preview0.pftrace",
+  "win_s": 7.28,
+  "frames": 137,
+  "wall_fps": 18.8,
+  "ProcessFrame_mean_ms": 28.512,
+  "p50": 27.621,
+  "p90": 33.635,
+  "p99": 43.279,
+  "max": 44.753,
+  "slices": {
+   "Camera": {
+    "ms_per_frame": 0.8470927007299269,
+    "n_per_frame": 1.0,
+    "ms_total": 116.0517,
+    "max_ms": 1.4507
+   },
+   "CoreManagerRender": {
+    "ms_per_frame": 5.655297080291971,
+    "n_per_frame": 1.0,
+    "ms_total": 774.7757,
+    "max_ms": 9.2634
+   },
+   "DrawCall": {
+    "ms_per_frame": 0.19428467153284673,
+    "n_per_frame": 17.0,
+    "ms_total": 26.617,
+    "max_ms": 0.2019
+   },
+   "FaceDetectPreprocess": {
+    "ms_per_frame": 1.604640875912409,
+    "n_per_frame": 0.5182481751824818,
+    "ms_total": 219.8358,
+    "max_ms": 7.1379
+   },
+   "FaceTrack": {
+    "ms_per_frame": 0.013014598540145984,
+    "n_per_frame": 0.9927007299270073,
+    "ms_total": 1.783,
+    "max_ms": 0.0348
+   },
+   "GetShader": {
+    "ms_per_frame": 0.014243795620437956,
+    "n_per_frame": 17.0,
+    "ms_total": 1.9514,
+    "max_ms": 0.0316
+   },
+   "PfttThrottle": {
+    "ms_per_frame": 0.08097299270072993,
+    "n_per_frame": 1.0,
+    "ms_total": 11.0933,
+    "max_ms": 0.1795
+   },
+   "ProcessFrame": {
+    "ms_per_frame": 28.511518248175182,
+    "n_per_frame": 1.0,
+    "ms_total": 3906.078,
+    "max_ms": 44.7526
+   },
+   "RenderFrame": {
+    "ms_per_frame": 1.140921897810219,
+    "n_per_frame": 1.0,
+    "ms_total": 156.3063,
+    "max_ms": 1.9852
+   },
+   "RenderPass": {
+    "ms_per_frame": 0.796385401459854,
+    "n_per_frame": 1.0,
+    "ms_total": 109.1048,
+    "max_ms": 1.3784
+   },
+   "Scene::AnimationSystem": {
+    "ms_per_frame": 0.001421167883211679,
+    "n_per_frame": 1.0,
+    "ms_total": 0.1947,
+    "max_ms": 0.0107
+   },
+   "Scene::CurveSystem": {
+    "ms_per_frame": 0.0011927007299270072,
+    "n_per_frame": 1.0,
+    "ms_total": 0.1634,
+    "max_ms": 0.0059
+   },
+   "Scene::LateUpdate": {
+    "ms_per_frame": 0.5990518248175182,
+    "n_per_frame": 1.0,
+    "ms_total": 82.0701,
+    "max_ms": 1.4699
+   },
+   "Scene::PhysicsUpdate": {
+    "ms_per_frame": 0.2525598540145986,
+    "n_per_frame": 1.0,
+    "ms_total": 34.6007,
+    "max_ms": 0.5449
+   },
+   "Scene::ScriptCallbacks": {
+    "ms_per_frame": 0.002681751824817518,
+    "n_per_frame": 1.0,
+    "ms_total": 0.3674,
+    "max_ms": 0.0376
+   },
+   "Scene::Start": {
+    "ms_per_frame": 0.020682481751824817,
+    "n_per_frame": 1.0,
+    "ms_total": 2.8335,
+    "max_ms": 0.0583
+   },
+   "Scene::TrackingSystem": {
+    "ms_per_frame": 0.0018999999999999998,
+    "n_per_frame": 1.0,
+    "ms_total": 0.2603,
+    "max_ms": 0.0197
+   },
+   "Scene::Update": {
+    "ms_per_frame": 1.5496437956204379,
+    "n_per_frame": 1.0,
+    "ms_total": 212.3012,
+    "max_ms": 3.5826
+   },
+   "ScnFrame": {
+    "ms_per_frame": 5.507740875912409,
+    "n_per_frame": 1.0,
+    "ms_total": 754.5605,
+    "max_ms": 9.1243
+   },
+   "Track": {
+    "ms_per_frame": 19.994820437956204,
+    "n_per_frame": 0.9927007299270073,
+    "ms_total": 2739.2904,
+    "max_ms": 35.7536
+   },
+   "Visual": {
+    "ms_per_frame": 0.602485401459854,
+    "n_per_frame": 17.0,
+    "ms_total": 82.5405,
+    "max_ms": 0.5599
+   }
+  },
+  "desc": "+ Reply panel OPEN (ring dimmed + pushed back)"
+ },
+ "05_full": {
+  "path": "sweep_05_full_preview0.pftrace",
+  "win_s": 7.28,
+  "frames": 140,
+  "wall_fps": 19.2,
+  "ProcessFrame_mean_ms": 28.443,
+  "p50": 27.832,
+  "p90": 33.044,
+  "p99": 38.621,
+  "max": 40.308,
+  "slices": {
+   "Camera": {
+    "ms_per_frame": 0.8510821428571429,
+    "n_per_frame": 0.9928571428571429,
+    "ms_total": 119.1515,
+    "max_ms": 1.6976
+   },
+   "CoreManagerRender": {
+    "ms_per_frame": 5.496625,
+    "n_per_frame": 1.0,
+    "ms_total": 769.5275,
+    "max_ms": 7.5117
+   },
+   "DrawCall": {
+    "ms_per_frame": 0.18743642857142856,
+    "n_per_frame": 16.87857142857143,
+    "ms_total": 26.2411,
+    "max_ms": 0.0934
+   },
+   "FaceDetectPreprocess": {
+    "ms_per_frame": 1.4949314285714286,
+    "n_per_frame": 0.5142857142857142,
+    "ms_total": 209.2904,
+    "max_ms": 4.7375
+   },
+   "FaceTrack": {
+    "ms_per_frame": 0.013492142857142857,
+    "n_per_frame": 1.0,
+    "ms_total": 1.8889,
+    "max_ms": 0.1074
+   },
+   "GetShader": {
+    "ms_per_frame": 0.01396,
+    "n_per_frame": 16.87857142857143,
+    "ms_total": 1.9544,
+    "max_ms": 0.0235
+   },
+   "PfttThrottle": {
+    "ms_per_frame": 0.07825642857142857,
+    "n_per_frame": 0.9928571428571429,
+    "ms_total": 10.9559,
+    "max_ms": 0.1899
+   },
+   "ProcessFrame": {
+    "ms_per_frame": 28.443407142857144,
+    "n_per_frame": 1.0,
+    "ms_total": 3982.077,
+    "max_ms": 40.308
+   },
+   "RenderFrame": {
+    "ms_per_frame": 1.1327407142857142,
+    "n_per_frame": 0.9928571428571429,
+    "ms_total": 158.5837,
+    "max_ms": 2.0549
+   },
+   "RenderPass": {
+    "ms_per_frame": 0.8021371428571429,
+    "n_per_frame": 0.9928571428571429,
+    "ms_total": 112.2992,
+    "max_ms": 1.6359
+   },
+   "Scene::AnimationSystem": {
+    "ms_per_frame": 0.0015035714285714286,
+    "n_per_frame": 1.0,
+    "ms_total": 0.2105,
+    "max_ms": 0.0129
+   },
+   "Scene::CurveSystem": {
+    "ms_per_frame": 0.0012542857142857143,
+    "n_per_frame": 1.0,
+    "ms_total": 0.1756,
+    "max_ms": 0.0181
+   },
+   "Scene::LateUpdate": {
+    "ms_per_frame": 0.5684557142857143,
+    "n_per_frame": 1.0,
+    "ms_total": 79.5838,
+    "max_ms": 1.4301
+   },
+   "Scene::PhysicsUpdate": {
+    "ms_per_frame": 0.2407507142857143,
+    "n_per_frame": 1.0,
+    "ms_total": 33.7051,
+    "max_ms": 0.4276
+   },
+   "Scene::ScriptCallbacks": {
+    "ms_per_frame": 0.003337142857142857,
+    "n_per_frame": 1.0,
+    "ms_total": 0.4672,
+    "max_ms": 0.0476
+   },
+   "Scene::Start": {
+    "ms_per_frame": 0.021760714285714286,
+    "n_per_frame": 1.0,
+    "ms_total": 3.0465,
+    "max_ms": 0.0529
+   },
+   "Scene::TrackingSystem": {
+    "ms_per_frame": 0.0017442857142857143,
+    "n_per_frame": 1.0,
+    "ms_total": 0.2442,
+    "max_ms": 0.0193
+   },
+   "Scene::Update": {
+    "ms_per_frame": 1.5242271428571428,
+    "n_per_frame": 1.0,
+    "ms_total": 213.3918,
+    "max_ms": 3.0104
+   },
+   "ScnFrame": {
+    "ms_per_frame": 5.353371428571428,
+    "n_per_frame": 1.0,
+    "ms_total": 749.472,
+    "max_ms": 7.2791
+   },
+   "Track": {
+    "ms_per_frame": 20.064989999999998,
+    "n_per_frame": 1.0,
+    "ms_total": 2809.0986,
+    "max_ms": 31.6753
+   },
+   "Visual": {
+    "ms_per_frame": 0.6163571428571429,
+    "n_per_frame": 16.87857142857143,
+    "ms_total": 86.29,
+    "max_ms": 0.4665
+   }
+  },
+  "desc": "+ AiPreviewAgent handler + OutboxMenu (everything on)"
+ }
+}

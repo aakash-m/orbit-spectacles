@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "note": "AI summary / urgency / requiresResponse per message id, generated once via Gemini 2.5-flash and frozen here so the ring layout is stable across runs and works without RSG tokens. OrbitAiService applies these first; it only calls Gemini for ids missing here, or when OrbitConfig.aiForceResummarize is true (which never writes back to this file).",
+  "summaries": {
+    "m01": { "summary": "Wants you to investigate staging deploy 500s before standup.", "urgency": 0.9, "requiresResponse": true },
+    "m02": { "summary": "Confirm revised pricing deck delivery by EOD Wednesday for board.", "urgency": 1.0, "requiresResponse": true },
+    "m03": { "summary": "Respond to the contract review meeting invitation by accepting or declining.", "urgency": 0.6, "requiresResponse": true },
+    "m04": { "summary": "Confirm if the onboarding change can ship or if QA found issues.", "urgency": 0.9, "requiresResponse": true },
+    "m05": { "summary": "Provide a payment date for the overdue July invoice by Friday.", "urgency": 0.9, "requiresResponse": true },
+    "m06": { "summary": "Wants someone to volunteer to sort a cake for Sofia's farewell.", "urgency": 0.7, "requiresResponse": true },
+    "m07": { "summary": "FYI: API quota at 84%, no action needed.", "urgency": 0.0, "requiresResponse": false },
+    "m08": { "summary": "Submit written feedback for Amira Osei before today's debrief.", "urgency": 1.0, "requiresResponse": true },
+    "m09": { "summary": "Confirm availability for coffee in Berlin next month.", "urgency": 0.3, "requiresResponse": true },
+    "m10": { "summary": "FYI: Expired cert fixed, system should be green in 10 minutes.", "urgency": 0.1, "requiresResponse": false },
+    "m11": { "summary": "FYI: Thanks for the intro to Ravi, no reply needed.", "urgency": 0.0, "requiresResponse": false },
+    "m12": { "summary": "FYI: Design Review scheduled for Friday, agenda not yet posted.", "urgency": 0.1, "requiresResponse": false },
+    "m13": { "summary": "Confirm Okta SSO support or roadmap status by Friday.", "urgency": 0.9, "requiresResponse": true },
+    "m14": { "summary": "FYI: Annual check-up scheduled for September 4th, 09:30.", "urgency": 0.5, "requiresResponse": false },
+    "m15": { "summary": "FYI: Mentioned in a social thread about hand-tracking thresholds.", "urgency": 0.1, "requiresResponse": false },
+    "m16": { "summary": "Review and sign revised SOW this week for Monday start.", "urgency": 0.9, "requiresResponse": true },
+    "m17": { "summary": "FYI: Perf trace from yesterday is in the shared drive.", "urgency": 0.1, "requiresResponse": false },
+    "m18": { "summary": "Respond to calendar invitation for pre-board sync Wednesday 17:00.", "urgency": 0.7, "requiresResponse": true },
+    "m19": { "summary": "FYI: VPN gateway unavailable Saturday 02:00-05:00 CEST, no action needed.", "urgency": 0.1, "requiresResponse": false },
+    "m20": { "summary": "Wants 30 minutes tomorrow or Thursday to hand over migration runbook.", "urgency": 0.8, "requiresResponse": true },
+    "m21": { "summary": "Wants to know if you are hiring for a design role.", "urgency": 0.5, "requiresResponse": true },
+    "m22": { "summary": "Decide whether to revisit partnership in Q4 or close it.", "urgency": 0.7, "requiresResponse": true },
+    "m23": { "summary": "FYI: Found Okta info in docs, no action needed.", "urgency": 0.0, "requiresResponse": false },
+    "m24": { "summary": "Wants to talk today about unaddressed roadmap feedback.", "urgency": 0.9, "requiresResponse": true }
+  }
+}

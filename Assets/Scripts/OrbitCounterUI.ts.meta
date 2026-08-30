@@ -1,0 +1,52 @@
+- !<AssetImportMetadata/41a79328-b1a2-4d75-bd7f-c5c0ffc8fb3f>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> fe0facf7-b88b-4abf-bf90-9cee0475508f
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> fe0facf7-b88b-4abf-bf90-9cee0475508f
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> d5cfa734-4a98-4c86-95d1-c7b0f2f5dbb0
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/d5cfa734-4a98-4c86-95d1-c7b0f2f5dbb0>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: d9cb7b92-0ed7-478e-a189-3e7610a26c9d
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    borderColor: false
+    surfaceFill: false
+    textColor: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - surfaceFill: !<Vec4> {x: 0.130000, y: 0.145000, z: 0.170000, w: 0.900000}
+      borderColor: !<Vec4> {x: 0.720000, y: 0.740000, z: 0.800000, w: 0.850000}
+      textColor: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 0.850000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input vec4 surfaceFill = {0.13,0.145,0.17,0.9} {"hint":"Chip surface fill. Low luminance on the additive display; a black fill would be invisible.", "widget":"color"}'
+    - '// @input vec4 borderColor = {0.72,0.74,0.8,0.85} {"hint":"Chip border colour — the bright edge that defines the chip against the world.", "widget":"color"}'
+    - '// @input vec4 textColor = {1,1,1,0.85} {"hint":"Text colour for the count label.", "widget":"color"}'

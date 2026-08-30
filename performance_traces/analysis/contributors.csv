@@ -1,0 +1,5 @@
+label,value
+12-card ring — GPU render subtree,3.06
+Ring per-frame scripts (billboard + card-lag ×12 + physics),0.91
+Reply panel open — build + layout,0.46
+Triage UI (undo chip + empty-state + "+N" counter),0.03

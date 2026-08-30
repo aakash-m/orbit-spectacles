@@ -1,0 +1,91 @@
+- !<AssetImportMetadata/29e12eb9-c5c4-42b9-bf24-a1bc35063e0a>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 11228340-7ce4-4839-8ebb-494a5b4822ef
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 11228340-7ce4-4839-8ebb-494a5b4822ef
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 0756472e-266e-411f-9d8d-2738e5f9694b
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/0756472e-266e-411f-9d8d-2738e5f9694b>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: e1125630-377f-41d0-85f9-57f6eaee3c6e
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    borderColor: false
+    borderSize: false
+    cards: false
+    cornerRadius: false
+    counter: false
+    easeSeconds: false
+    emptyState: false
+    holdSeconds: false
+    nowIso: false
+    radius: false
+    recentreThresholdDeg: false
+    ringPivot: false
+    surfaceFill: false
+    verticalFollow: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - ringPivot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      cards: !<MappingBased.AssignableType_1[]>
+        []
+      counter: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      emptyState: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      radius: !<float> 70.000000
+      nowIso: "2026-08-28T08:05:00Z"
+      recentreThresholdDeg: !<float> 45.000000
+      holdSeconds: 0.500000
+      easeSeconds: 0.600000
+      verticalFollow: 0.080000
+      surfaceFill: !<Vec4> {x: 0.130000, y: 0.145000, z: 0.170000, w: 0.900000}
+      borderColor: !<Vec4> {x: 0.720000, y: 0.740000, z: 0.800000, w: 0.900000}
+      borderSize: 0.150000
+      cornerRadius: 1.200000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input SceneObject ringPivot {"hint":"Child SceneObject that carries the eased ring yaw. Cards are parented under it."}'
+    - "// @input AssignableType_1[] cards {\"hint\":\"The 12 card SceneObjects' OrbitCardUI components, in slot order (any order — sorted by urgency at runtime).\"}"
+    - "// @input AssignableType_2 counter {\"hint\":\"The '+N more' counter chip.\"}"
+    - '// @input AssignableType_3 emptyState {"hint":"The calm completion state shown when the queue is exhausted."}'
+    - '// @ui {"widget":"separator"}'
+    - '// @input float radius = 70 {"hint":"Arc radius from the user, in cm.", "widget":"slider", "min":50, "max":100, "step":1}'
+    - "// @input string nowIso = \"2026-08-28T08:05:00Z\" {\"hint\":\"Reference 'now' as ISO-8601 UTC — drives the relative-time labels. Defaults to just after the dataset's generation time.\"}"
+    - '// @ui {"widget":"separator"}'
+    - '// @input float recentreThresholdDeg = 45 {"hint":"Head-turn past this many degrees (and held) before the ring re-centres.", "widget":"slider", "min":20, "max":90, "step":1}'
+    - '// @input float holdSeconds = 0.5 {"hint":"Seconds the head must stay past the threshold before the re-centre begins.", "widget":"slider", "min":0.1, "max":2, "step":0.1}'
+    - '// @input float easeSeconds = 0.6 {"hint":"Seconds the ring takes to ease into the new orientation.", "widget":"slider", "min":0.2, "max":1.5, "step":0.1}'
+    - "// @input float verticalFollow = 0.08 {\"hint\":\"How quickly the ring's height tracks the user's (0 = frozen, 1 = instant). Keeps cards at eye level without head-bob.\", \"widget\":\"slider\", \"min\":0.02, \"max\":1, \"step\":0.01}"
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Card theme"}'
+    - '// @input vec4 surfaceFill = {0.13,0.145,0.17,0.9} {"hint":"Card surface fill. Low luminance for the additive display — a black fill would be invisible on device.", "widget":"color"}'
+    - '// @input vec4 borderColor = {0.72,0.74,0.8,0.9} {"hint":"Card border colour — the bright edge that actually defines the card against the world.", "widget":"color"}'
+    - '// @input float borderSize = 0.15 {"hint":"Card border thickness in cm (~1.5 mm).", "widget":"slider", "min":0.05, "max":0.4, "step":0.01}'
+    - '// @input float cornerRadius = 1.2 {"hint":"Card corner radius in cm.", "widget":"slider", "min":0.4, "max":3, "step":0.1}'
+    - '// @ui {"widget":"group_end"}'

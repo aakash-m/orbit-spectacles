@@ -1,0 +1,46 @@
+- !<AssetImportMetadata/7051c70e-ccf9-4404-bb7d-ce5a8834cbf9>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 63585cad-294e-4d1a-86d4-1c9dccb928a5
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 63585cad-294e-4d1a-86d4-1c9dccb928a5
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 3a6bc5b7-a1ce-4729-9aec-ef81d13c5fd3
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/3a6bc5b7-a1ce-4729-9aec-ef81d13c5fd3>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 341a835d-8292-41b6-8f36-72348430d746
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    handType: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - handType: right
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - "// @input string handType = \"right\" {\"hint\":\"Which hand's palm opens the menu: \\\"right\\\" or \\\"left\\\".\"}"

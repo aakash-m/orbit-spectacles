@@ -1,0 +1,29 @@
+# BEGIN Lens Studio managed Agents-Docs block
+.mcp.json
+.cursor/mcp.json
+.vscode/mcp.json
+.codex/config.toml
+.claude/settings.local.json
+# END Lens Studio managed Agents-Docs block
+
+# Added by Lens Studio (LEAF plugin)
+leaf_plugin_settings.json
+
+# ── Secrets — never commit (security audit 2026-08-30) ──
+spk_debug_key.pem
+
+# ── Lens Studio generated / local state ──
+.virtual-scene.json
+*.esproj.*.lock
+Cache/
+Workspaces/
+PluginsUserPreferences/
+
+# ── Temp / working dirs ──
+.font_tmp/
+.icon_tmp/
+tempAssetGen/
+*.stackdump
+
+# ── Perf capture artifacts (performance_traces/analysis/ is kept; raw traces are not) ──
+performance_traces/*.pftrace
