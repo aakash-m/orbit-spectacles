@@ -77,3 +77,14 @@ obviously expensive.
 - Runs at 60fps with no network available.
 
 Use /verify-preview when you're done and show me what it looks like.
+
+## Correction 1 — additive-display contrast
+
+Prompted by the plan proposing "dark translucent with a blur backing" cards.
+SPECS displays are additive — black renders as transparent — so a dark scrim
+gives no contrast on device and can't define a card edge against a bright
+room. Resolved before locking the visual direction rather than deferred to the
+perf pass: cards use a low-luminance fill (~0.15) plus a distinctly brighter
+luminous border (~0.7), and the border is what reads on-device. The Preview
+composite alpha-blends and over-represents dark-panel contrast, so fill and
+border luminance are flagged for tuning on real hardware.

@@ -63,3 +63,12 @@ phase-2 palette.
 - Cancel at any step leaves the message untouched in the ring.
 
 /verify-preview when done.
+
+## Correction 1 — deterministic tie-break
+
+Prompted by the first summary pass leaving seven messages tied at urgency 0.90,
+so their ring order was arbitrary and would reshuffle on any re-summarize —
+and the demo is filmed over multiple takes against a fixed centre card. Fix:
+`MessageStore` ring order is urgency desc -> `receivedAt` desc -> `id` asc
+(`byRingOrder`). The approved summaries were later baked into
+`Assets/orbit-summaries-baked.json` so the shipped config never re-summarizes.

@@ -38,3 +38,12 @@ Also tuned in-test only (no Lens change): LEAF's card drag runs in Direct
 targeting mode (Indirect adds a far-ray "stretch" that scrambles flick
 direction), and reply-panel buttons are driven via `ReplyFlowController`
 test seams because LEAF's camera→target raycast crashes on head-locked UI.
+
+## Correction 2 — INTERNAL_ERROR vs real assertion failure
+
+Prompted by `PreviewInteractTool` (the preview puppet LEAF drives) wedging with
+`INTERNAL_ERROR` roughly one run in three, and not wanting agent flakiness
+reported as Lens defects. Handled as a reporting rule, not a Lens or test
+change: a failed scenario is classified — an agent `INTERNAL_ERROR` (or MCP
+timeout) is retried up to 3 times and reported separately from a real
+assertion failure, which is surfaced as a defect immediately.

@@ -1,68 +1,50 @@
-# How to run these prompts
+# Orbit — prompt log
 
-Put this whole `orbit-prompts/` folder inside your Lens Studio project folder — the
-same folder Claude Code is running in. Then you never paste a prompt again.
+This folder is the prompt log for Orbit: the prompts actually used to build it,
+in the order they were sent, including the mid-build approvals and corrections.
+It is the CLAD-execution artifact — read it top to bottom.
 
-## Running a phase
+Each phase file was handed to Claude Code with an `@`-reference
+(`@orbit-prompts/01-ring.md`). The shorter approval and correction prompts were
+typed inline; the ones that changed the design or approach are captured here as
+their own files and, where they changed a phase mid-flight, appended to that
+phase's file under a `## Correction` heading.
 
-In Claude Code, type one short line:
+## Sequence
 
-```
-Read orbit-prompts/01-ring.md and follow it as my instructions for this phase.
-```
-
-Or use an @-reference, which is shorter:
-
-```
-@orbit-prompts/01-ring.md
-```
-
-That's it. Two seconds of typing instead of a 79-line paste, and no risk of the
-terminal eating your newlines.
-
-## Order
-
-| File | When |
+| file | what it is |
 |---|---|
-| `00-setup.md` | Already done if the router ran and the preview is clean |
-| `01-ring.md` | Data layer + the ring. Stop when 12 cards render. |
-| `02-flick-triage.md` | The gesture. Budget iteration time here. |
-| `03-ai-and-reply.md` | Summaries + voice reply |
-| `04a-leaf-tests.md` | LEAF scenarios |
-| `04b-performance.md` | Perf trace, attribution, optimize |
-| `05-optional-hand-menu.md` | Only if everything above is verified |
-| `06-optional-pin-to-wall.md` | Only if everything above is verified |
+| `00-setup.md` | Phase 0 — environment + SPECS 27 project validation |
+| `01-ring.md` | **Phase 1** — data layer + the body-anchored ring |
+| `Approved.md` | Phase-1 plan approved; raised the additive-display contrast question |
+| `Approved_Phase-2.md` | Phase-2 go-ahead — real-time clock vs demo timing, snooze-return constant, DOWN as a stub |
+| `02-flick-triage.md` | **Phase 2** — pinch-and-flick triage, commit thresholds, mandatory undo |
+| `Before_phase_3.md` | Hands-on review setup — dissolve timing constant, force-empty debug key, WAV audition |
+| `Approved_Before_phase_4.md` | Phase-3 decisions — local storage, Gemini model, palm-menu guard, mid-session token expiry, the ASR question |
+| `03-ai-and-reply.md` | **Phase 3** — AI summaries + voice reply |
+| `Before_phase_4a.md` | Summaries approved; deterministic tie-break for the 0.90 tie; label simulated transcripts; classify `INTERNAL_ERROR` vs assertion failure |
+| `04a-leaf-tests.md` | **Phase 4a** — LEAF integration suite (10 scenarios) |
+| `Before_phase_4b.md` | Bake the AI summaries to a static file; note the LEAF-caught defect in the README |
+| `BugFix_before_phase_4b.md` | Fix 5 `/code-review` findings in `OrbitAiService` without disturbing the frozen layout |
+| `04b-performance.md` | **Phase 4b** — differential frame-time attribution + optimize |
+| `After_phase_4b.md` | "Option 1" — three low-risk wins only; verify the frozen layout; write `FINDINGS.md` |
+| `05-optional-hand-menu.md` | Optional phase — not executed (scoped out) |
+| `06-optional-pin-to-wall.md` | Optional phase — not executed (see the README's "What's next") |
+| `Health_check_after_restart.md` | Post-restart verification before filming; the flick misfire found here traced to preview-camera drift |
+| `Diagnose_fix.md` | Pushback on that diagnosis — preview-fps measurement, no flick-tuning changes |
+| `Clean_up_before_ship.md` | Pre-publish secrets audit, Perfetto tooling note, delete unused assets |
+| `07-token-scrub.md` | Scrub RSG tokens from `Scene.scene` to placeholders + whole-tree audit |
+| `08-ship-pass.md` | Lock the build — disable debug keys, confirm flags, re-run LEAF 10/10 |
+| `09-repo-setup.md` | `git init`, `.gitignore`, review the file list, first commit + push |
+| `10-readme.md` | Write the repo `README.md` |
+| `11-prompt-log.md` | This step — commit the log, append the corrections, write this file |
 
-Between each phase, look at the preview with your own eyes before moving on.
+## Corrections
 
-## Why this is better than pasting
+Appended to the relevant phase file under a `## Correction` heading:
 
-Beyond avoiding the paste problem: these files become your **prompt log**, which is
-a required submission artifact and part of the 50% CLAD-execution score. Commit them
-to the repo. When you write a corrective prompt because something came back wrong,
-append it to the bottom of that phase's file under a `## Correction 1` heading with
-one line on what went wrong. A log that shows you catching and fixing problems is
-worth more than one where everything worked first try — the second kind isn't
-believable.
-
-## Follow-up prompts
-
-Short corrections you can just type directly, no file needed:
-
-```
-The ring is following my head. It should be body-anchored with lazy-follow —
-only re-centre after I turn more than 45 degrees and hold for 0.5s. Fix it and
-verify with /verify-preview.
-```
-
-```
-Summaries are restating the subject line instead of the ask. Rewrite the
-system prompt so each summary states what the sender WANTS in under 12 words,
-then re-run against all 24 messages and show me the output.
-```
-
-```
-The flick is firing when I move my hand casually. Raise the release velocity
-threshold, test three values with /specs-preview-interaction, and tell me which
-one you picked and why.
-```
+- `01-ring.md` — additive-display contrast (dark scrim gives no contrast on an additive display)
+- `03-ai-and-reply.md` — deterministic tie-break (seven messages tied at urgency 0.90)
+- `04a-leaf-tests.md` — Correction 1: a real defect caught by LEAF (`OrbitUndoChipUI` disabled its SceneObject inside `onTriggerStart`, stranding the awaited `onTriggerEnd` — would have hung on device). Correction 2: `INTERNAL_ERROR` vs real assertion failure
+- `04b-performance.md` — option 1 over the full optimize pass (Preview's ~19 fps was VIO/face-detect simulation, not Lens work)
+- `Health_check_after_restart.md` — the flick misfire was preview-camera drift, not frame rate
